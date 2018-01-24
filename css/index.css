@@ -1,0 +1,51 @@
+body{font-family: "微软雅黑";}
+.mt-header{height: 90px;}
+#app .page-title {
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    line-height: 1;
+}
+.banner img,a{
+	width: 100%;
+}
+.tu{height: 6.6rem}
+.tu img{width: 48%;float: left}
+.tu img.le{padding-right: 4%;}
+.texunying{margin-top:1rem;}
+.texunying .te{
+	/*background-color: palegreen;*/
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding-top: 0.8rem;
+	height: 6rem;
+}
+.texunying .te>div{float: left;}
+.texunying .te .le{width: 30%;height: 100%;}
+.texunying .te .le img{width: 80%;height: 80%;}
+.texunying .te .ri p{font-size: 14px;text-align: left;padding: 0;margin: 0;}
+.texunying .te .ri span,.zhibo .zhi span{font-size: 12px;text-align: left;color: #999;}
+.texunying .te .ri p.qian{font-size: 12px;padding-top: 0.6rem;}
+.zhibo .zhi{height: 4rem;}
+.zhibo .zhi p,.jiaocheng .zhi p{text-align: left;font-size: 12px;line-height: 1.4;margin: 0;}
+.texunying p{text-align: center;padding-bottom: 0;margin-bottom: 0;}
+.zhibo p,.jiaocheng p{text-align: center;padding-bottom: 0;margin-bottom: 0;}
+/*标题*/
+.texunying p.baishi,.zhibo p.baishi,.jiaocheng p.baishi{font-size:12px;color: #999;text-align: center;padding: 0;margin-bottom: 1rem;margin-top: 0.2rem;}
+.zhibo .zhi>div{float: left;width: 48%;}
+.zhibo .zhi .ll11{padding-right: 0.4rem;}
+.zhibo .zhi .ll img{width: 100%;}
+.zhibo .zhi{height: 12rem;padding-top: 0.8rem;padding-bottom: 0.8rem;border-bottom: 1px solid#ddd;border-top: 1px solid #ddd;}
+
+.jiaocheng .zhi>div{float: left;width: 32%;}
+.jiaocheng .zhi .ll11{padding-right: 0.4rem;}
+.jiaocheng .zhi .ll img{width: 100%;}
+.jiaocheng .zhi{height: 5rem;padding-top: 0.8rem;padding-bottom: 0.8rem;border-bottom: 1px solid#ddd;border-top: 1px solid #ddd;}
+.da{height: 15rem;padding-top: 0.8rem;padding-bottom: 0.8rem;border-bottom: 1px solid#ddd;}
+.da p{margin: 0;font-size: 12px;}
+.da img{width: 100%;}
+
+.host img{width: 100%;}
+.host p{font-size: 12px;padding-left: 0.6rem;}*/
+/*vip*/*/

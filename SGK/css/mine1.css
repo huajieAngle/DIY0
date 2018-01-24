@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: #000000;}
+/*body{background-color: #EBECF0;}*/
+.tit{background: #FFFFFF;color: #000000;}
+.clk{border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;}
+.mint-searchbar{
+	z-index: 0;
+	margin-top: 40px;
+	background-color:#EBECF0;
+}
+.mintui-search{
+	margin-left: 116px;
+}
+.mint-searchbar-inner{
+	height: 19px;
+}
+.mint-header{
+	background-color: #fff;
+	color: #000000;
+}
+.mint-searchbar-inner{
+	background-color:#F7F8FA ;
+}
+.mint-searchbar-core{
+	background-color:#F7F8FA;
+}
+
+.mint-search{
+	height: 18vh;
+}
+.mint-cell-text{
+	padding-left: 10px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<mt-header title="手工客" fixed>
+				<router-link to="/" slot="left">
+					<mt-button icon="back"></mt-button>
+				</router-link>
+				<mt-button icon="search" slot="right"></mt-button>
+			</mt-header>
+			<!--header-->
+			<mt-navbar class="page-part" :selected.sync="selected">
+				<mt-tab-item id="1">精选</mt-tab-item>
+				<mt-tab-item id="2">专题</mt-tab-item>
+				<mt-tab-item id="3">达人</mt-tab-item>
+				<mt-tab-item id="3">活动</mt-tab-item>
+			</mt-navbar>
+			<mt--container>
+				<div class="banner">
+					<a href="vip.html"><img src="https://sogoke-static.b0.upaiyun.com/static/v1/content/sogoker/34277.jpg" />
+					</a>
+				</div>
+				<mt-navbar class="page-part" :selected.sync="selected">
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">看教程</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">买材料</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">逛集市</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">线下课</mt-tab-item>
+				</mt-navbar>
+				<div class="tu">
+					<a href=""><img src="img/80.jpg" class="le" /></a>
+					<a href=""><img src="img/80.jpg" /></a>
+				</div>
+				<div class="texunying">
+					<p>手工特训营</p>
+					<p class="baishi">线上拜师，让天下没有难学的手艺</p>
+					<div class="te">
+						<div class="le"><img src="img/11.png"/></div>
+						<div class="ri">
+							<p>shera老师香薰蜡烛石膏特训营</p>
+							<span>邂逅香氛，带给你不一样的感官体验</span>
+							<p class="qian">千年艺术体验店香薰导师，国际香薰蜡烛高级</br>导师证，韩国香薰蜡烛石膏...</p>
+						</div>
+					</div>
+					<div class="te">
+						<div class="le"><img src="img/11.png"/></div>
+						<div class="ri">
+							<p>shera老师香薰蜡烛石膏特训营</p>
+							<span>邂逅香氛，带给你不一样的感官体验</span>
+							<p class="qian">千年艺术体验店香薰导师，国际香薰蜡烛高级</br>导师证，韩国香薰蜡烛石膏...</p>
+						</div>
+					</div>
+					<div class="te">
+						<div class="le"><img src="img/11.png"/></div>
+						<div class="ri">
+							<p>shera老师香薰蜡烛石膏特训营</p>
+							<span>邂逅香氛，带给你不一样的感官体验</span>
+							<p class="qian">千年艺术体验店香薰导师，国际香薰蜡烛高级</br>导师证，韩国香薰蜡烛石膏...</p>
+						</div>
+					</div>
+				</div>
+				<div class="zhibo">
+					<p>手作直播</p>
+					<p class="baishi">近距离更直观学习手工</p>
+					<div class="zhi">
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<span>直播时间：2018.01.26<br>13:30</span>
+							<p><梦三生>易学高品质绕</br>丝缠枝仙气手环</p>
+						</div>
+						<div class="ll">
+							<img src="img/80 (2).jpg" alt="" />
+							<span>直播时间：2018.01.26<br>13:30</span>
+							<p><梦三生>易学高品质绕</br>丝缠枝仙气手环</p>
+						</div>
+					</div>
+				</div>
+				<div class="zhibo">
+					<p>手作众筹</p>
+					<p class="baishi">支持手艺人，让情怀落地</p>
+					<div class="zhi">
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<span>直播时间：2018.01.26<br>13:30</span>
+							<p><梦三生>易学高品质绕</br>丝缠枝仙气手环</p>
+						</div>
+						<div class="ll">
+							<img src="img/80 (2).jpg" alt="" />
+							<span>直播时间：2018.01.26<br>13:30</span>
+							<p><梦三生>易学高品质绕</br>丝缠枝仙气手环</p>
+						</div>
+					</div>
+				</div>
+				<div class="jiaocheng">
+					<p>教程精选</p>
+					<p class="baishi">也许是全球最大的手工教程</p>
+					<div class="zhi">
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>
+							
+						</div>
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>
+							
+						</div>
+						<div class="ll">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>
+							
+						</div>
+					</div>
+					<div class="zhi">
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>
+							
+						</div>
+						<div class="ll ll11">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>
+							
+						</div>
+						<div class="ll">
+							<img src="img/80 (2).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>							
+						</div>
+					</div>
+				</div>			
+			<div class="da">
+				<div class="ll">
+							<img src="img/100.jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>							
+				</div>
+			</div>
+			<div class="da">
+				<div class="ll">
+							<img src="img/80 (4).jpg" alt="" />
+							<p>迷你版小皇冠胸针</p>							
+				</div>
+			</div>
+			
+			</mt--container>
+			<!--footer-->
+			<mt-tabbar fixed>
+				<mt-tab-item id="">
+					<img slot="icon" src="img/timg (1).jpg">关注
+				</mt-tab-item>
+				<mt-tab-item id="订单">
+					<img slot="icon" src="img/timg (1).jpg"> 发现
+				</mt-tab-item>
+				<mt-tab-item id="发现">
+					<img slot="icon" src="img/timg (1).jpg"> 手工圈
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 市集
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 我的
+				</mt-tab-item>
+			</mt-tabbar>
+		</div>
+	</body>
+	<!-- import Vue before Mint UI -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			methods: {
+				handleClick: function() {
+					this.$toast('Hello world!')
+				}
+			}
+		})
+	</script>
+
+</html>

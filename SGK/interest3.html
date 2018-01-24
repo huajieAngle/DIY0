@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mine.css"/>
+		<link rel="stylesheet" href="css/media-100.css" />
+		<script src="js/vue-2.5.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			ul{
+				list-style: none;
+			}
+	
+			.content{
+				width:100%;
+				margin-top: 39px;
+			}
+			
+			.content .container{
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				font-size:0;
+			}
+			.content a{
+				/*flex: 1;*/
+			}
+			.content a img{
+				width:100%;
+			}
+			.content p{
+				font-size:0.20rem;
+				color:#000;
+			}
+			.content a .pd{
+				font-size:0.20rem;
+				color:#000;
+				padding: 0px 10px;
+				margin-top: -38px;
+			}
+			.content span{
+				font-size: 0.18rem;
+				color:#dcdcdc;
+			}
+			.content .box1{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding:0 0.2rem;
+			}
+			.content .right img{
+				width:0.3rem;
+				/*align-self: flex-end;*/
+			}
+			.content .right img:last-of-type{
+				padding-left:0.1rem;
+				width:0.32rem;
+			}
+			.box {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.18rem;
+}
+	.content .box1 {
+  display: flex;
+  margin-top: 0.4rem;
+  padding: 16px 0.2rem;
+  background-color: #f6f9f6;
+}
+.content .box2{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.content .box3 {
+  display: flex;
+  margin-top: 0.4rem;
+  padding: 16px 0.2rem;
+  font-size: 0.2rem;
+}
+.content .gz{
+	width: 50px;
+	height: 22px;
+	line-height: 20px;
+	border: 1px solid #f00;
+	font-size: 0.12rem;
+	text-align: center;
+	margin: 30px 10px;
+	color: #f00;
+	border-radius: 5px;
+}
+.content .gz1{
+	width: 40px;
+	height: 20px;
+	line-height: 18px;
+	border: 1px solid #e6e2e7;
+	font-size: 0.12rem;
+	text-align: center;
+	margin-top: -21px;
+	color: #dcdcdc;
+	border-radius: 2px;
+}
+ .container1{
+                    display:flex;
+                    width:170px;
+                    margin-top:15px;
+                 }
+                 .container2{
+                    display:flex;
+                    width:200px;
+                    margin-top:-18px;
+                 }
+      .image{
+                 /*float:left;*/
+                 height:30px;
+                 width:30px;
+                  margin-right:15px;
+                margin-top: 13px;
+                border-radius: 50%;
+                 }
+       .news{
+                /*float:left;*/
+                flex-grow:1; 
+                /*flex-shrink:7;*/
+                /*width:170px;*/
+                height:100px;
+                line-height:25px;
+                font-family:"宋体";
+                overflow:hidden;
+                }
+       .title{
+                 text-overflow:ellipsis;
+                 overflow:hidden;
+                 white-space:nowrap;
+                 font-weight:bold;
+                 font-size:16px;
+              }
+       .paragraph{font-size:14px;
+                     color:#dcdcdc;               
+                 }
+          .content .box3 p{
+                 color: #000000;
+                 font-size: 0.26rem;
+                 margin-top: -38px;
+                 }
+                  
+                  	
+
+            .container2 .rl li{
+                   float: left;
+                   font-size: 0.20rem;
+                   padding-left: 20px;
+                  
+                 }
+                    .container2 .rl li a{
+                    	color: #CCCCCC;
+                    	 text-decoration: none;
+                    }
+                  .Grid {
+  display: flex;
+  padding: 0 10px;
+  margin-top: -38px;
+}
+
+.Grid-cell {
+  flex: 1;
+  padding: 0 5px;
+  
+}
+.Grid-cell img{
+	width: 100%;
+}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<mt-header fixed title="全部动态">
+ <router-link to="/" slot="left">
+    <mt-button >订阅</mt-button>
+  </router-link>
+  <mt-button icon="more" slot="right" ></mt-button>
+</mt-header>
+
+
+
+<div class="content">
+		
+			  
+			  <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">李艳</div>
+				 		<div class="paragraph">来自 图文教程</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+			 
+			  	<a href="interest.html" >
+					<img class="pd" src="img/图层 8.png" alt=""/>
+				</a>
+		<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				
+			  </div>
+			  
+			  <div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+			  </div>
+			  <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">芥末味奶茶</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+				<div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层 2.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 3.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 4.png" alt=""/></div>
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				
+			  </div>
+				<div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+			  </div>
+				<div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">无情</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+			  	<div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层  7.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 6.png" alt=""/></div>
+				 
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				</div>
+				<div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+				 <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">来来</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				  <div class="gz">+关注</div>
+			 </div>
+			 <div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层 8.png" alt=""/></div>
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				</div>
+				  <div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+			  </div>
+			  <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">芥末味奶茶</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+				<div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层 2.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 3.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 4.png" alt=""/></div>
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				
+			  </div>
+			    <div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+			  </div>
+			  <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">芥末味奶茶</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+				<div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层 2.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 3.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 4.png" alt=""/></div>
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				
+			  </div>
+			  <div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+			  </div>
+				<div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">无情</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				 <div class="gz">+关注</div>
+			  </div>
+			  	<div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层  7.png" alt=""/></div>
+				  <div class="Grid-cell"><img class="pd" src="img/图层 6.png" alt=""/></div>
+				 
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				</div>
+				<div style="border-top: 2px solid #e6e2e7; margin-top: 25px;">
+				 <div class="box2">
+				 <div class="container1">
+				 	<img class="image" src="img/1.jpg" alt="" />
+				 	<div class="news">
+				 		<div class="title">来来</div>
+				 		<div class="paragraph">来自 结绳圈</div>
+				 	</div>
+				 </div>
+				  <div class="gz">+关注</div>
+			 </div>
+			 <div class="Grid">
+				  <div class="Grid-cell"><img class="pd" src="img/图层 8.png" alt=""/></div>
+				</div>
+				<div class="box3">
+			  	<p>五彩笔筒(加长版)</s>
+		</div>
+			<div class="box2">
+				 <div class="gz1">纸艺</div>
+				 <div class="container2">
+				 	<ul class="rl">
+				 		<li><a href="">评论3</a></li>
+				 		<li><a href="">点赞24</a></li>
+				 		<li><a href="">收藏87</a></li>
+				 	</ul>
+				 </div>
+				</div>
+		</div>
+</div>
+	</body>
+	<!-- import Vue before Mint UI -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			methods: {
+				handleClick: function() {
+					this.$toast('')
+				}
+			}
+		})
+	</script>
+
+</html>

@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: #000000;}
+.tit{background: #FFFFFF;color: #000000;}
+.clk{border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;}
+.mint-badge.is-size-normal{
+	border-radius:4px;
+	font-size: 16px;
+}
+.content{
+	margin-top: 10px;
+	padding: 0 10px;
+	max-width: 100%;
+}
+.mint-badge.is-primary{
+	background-color: #E6E2E7;
+	color: #000000;
+}
+.mint-badge.is-error{
+	background-color: #E6E2E7;
+	color: #000000;
+}
+.mint-badge.is-success{
+	background-color: #E6E2E7;
+	color: #000000;
+}
+.mint-badge.is-warning{
+	background-color: #E6E2E7;
+	color: #000000;
+}
+.mint-header{
+     display: flex;
+}

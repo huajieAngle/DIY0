@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mine1.css"/>
+	</head>
+     
+	<body class="pic_color">
+		<div id="app">
+			<mt-header fixed title="私信列表">
+	            <router-link to="/" slot="left">
+	            <mt-button icon="back"></mt-button>
+                </router-link>
+          </mt-header>
+          <mt-search
+          :value.sync="value"
+          cancel-text="取消"
+           placeholder="搜索">
+          </mt-search>
+          
+		
+		<mt-cell title="系统通知">
+		
+		  <span>昨天9:30</span>
+		  <img slot="icon" src="../手工客项目/img/图层 5.png" width="24" height="24">
+            
+         </mt-cell>
+	
+		</div>
+		
+		
+	</body>
+	<!-- import Vue before Mint UI -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			methods: {
+				handleClick: function() {
+					this.$toast('')
+				}
+			}
+			
+		})
+	</script>
+
+</html>
